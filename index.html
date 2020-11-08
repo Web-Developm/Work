@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          <h2>Manavata Membership Registration Form</h2>
+        </div>
+
+        <div class="card-body">
+          <form action="" method="POST">
+            <h3>Personal Infromation</h3>
+            <br>
+            <p style="text-align:right"><span>*</span> Mandatory Fileds</p>
+
+            <div class="form-group">
+              <div class="row row-1">
+                <div class="col-lg-2">
+                  <p><span>*</span>Register For</p>
+                </div>
+
+                <div class="col-lg-3">
+                  <fieldset>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="r11" name="register" required>
+
+                    <label class="custom-control-label" for="r11">Member</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="r21" name="register" required>
+                    <label class="custom-control-label" for="r21">Volunteer</label></label>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="r31" name="register" required>
+                    <label class="custom-control-label" for="r31">Donor</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="row">
+
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-user"></i>Name</p>
+                </div>
+
+                <div class="col-lg-2">
+                  <select name="name" class="custom-select" value required>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Miss</option>
+                    <option>Dr</option>
+                  </select>
+                </div>
+
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="fname" id="fname" placeholder="FirstName" required>
+
+                </div>
+
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" name="lname" id="lname" placeholder="LastName" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-envelope"></i>Email</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-sm fa-fw fa-calendar-day"></i>DOB</p>
+                </div>
+
+                <div class="col-lg-6">
+                <input type="date" name="date" id="date" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-layer-group"></i>Blood Group</p>
+                </div>
+
+                <div class="col-lg-10">
+                 <select name="blood" class="custom-select" required>
+                   <option selected>A++</option>
+                   <option>A--</option>
+                   <option>B++</option>
+                   <option>B--</option>
+                   <option>AB++</option>
+                   <option>O++</option>
+                   <option>O--</option>
+                 </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-address-book"></i>Address</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="text" name="address" id="address" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-compass"></i>District</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="text" name="district" id="district" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-sm fa-fw fa-map"></i>Province/State</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="text" name="state" id="state" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-globe-asia"></i>Country</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="text" name="country" id="country" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-thumbtack"></i>Pincode</p>
+                </div>
+
+                <div class="col-lg-10">
+                <input type="text" name="pincode" id="pincode" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-phone-alt"></i>Phone Number</p>
+                </div>
+
+                <div class="col-lg-4">
+                  <select name="number" class="custom-select" value required>
+                  <option selected>(India+91)</option>
+                  </select>
+
+                </div>
+
+                <div class="col-lg-6">
+                  <input type="number" name="ph" id="ph" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-sm fa-fw fa-rupee-sign"></i>Membership</p>
+                </div>
+
+                <div class="col-lg-10">
+                 <select name="member" class="custom-select" required>
+                   <option selected>Annual 100 Rs</option>
+                   <option>Life 1000 Rs</option>
+                   <option>Patron 5000 Rs</option>
+                 </select>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-4">
+                  <p><span>*</span>I would like to volunteer for following services </p>
+                </div>
+
+                <div class="col-lg-6">
+                 <select name="member" class="custom-select" required>
+                   <option selected>Week Days</option>
+                   <option>Week Ends</option>
+                   <option>Both</option>
+                 </select>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-sm fa-fw fa-heartbeat"></i>Health</p>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c11" required>
+                    <label class="custom-control-label" for="c11">Yoga Practice & Teaching</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c12" required>
+                    <label class="custom-control-label" for="c12">Healthy Living Program</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c13" required>
+                    <label class="custom-control-label" for="c13">Rural Health centers</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c14" required>
+                    <label class="custom-control-label" for="c14">Medical Camps</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-university"></i>Education</p>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c21" required>
+                    <label class="custom-control-label" for="c21">Personality Development</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c22" required>
+                    <label class="custom-control-label" for="c22">Youth Empowerment</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c23" required>
+                    <label class="custom-control-label" for="c23">Women Empowerment</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c24" required>
+                    <label class="custom-control-label" for="c24">Teachings</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fab fa-sm fa-fw fa-canadian-maple-leaf"></i>Environment</p>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c31" required>
+                    <label class="custom-control-label" for="c31">Plantation</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c32" required>
+                    <label class="custom-control-label" for="c32">Natural Farming / Agriculture</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c33" required>
+                    <label class="custom-control-label" for="c33">Sustainable Rural Development</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-2.5">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c34" required>
+                    <label class="custom-control-label" for="c34">Cycling for Humanity</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-2">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-hands-helping"></i>Help Needy</p>
+                </div>
+
+                <div class="col-lg-1.1">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c41" required>
+                    <label class="custom-control-label" for="c41">Helping Needy Children</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-1.1">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c42" required>
+                    <label class="custom-control-label" for="c42">Helping Poor Parents</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-1.1">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c43" required>
+                    <label class="custom-control-label" for="c43">Blood Donation</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-1.1">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c44" required>
+                    <label class="custom-control-label" for="c44">Disaster Relief</label>
+                  </div>
+                </div>
+
+                <div class="col-lg-1.1">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="c45" required>
+                    <label class="custom-control-label" for="c45">Clothes Distribution</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg-3">
+                  <p><span>*</span><i class="fas fa-fw fa-sm fa-donate"></i>Donate Purpose</p>
+                </div>
+
+                <div class="col-lg-4">
+                  <select name="donate-purpose" class="custom-select" required>
+                    <option selected>Orphan Child</option>
+                    <option>Goshala</option>
+                    <option>Natural Farming</option>
+                    <option>Help Needy</option>
+                    <option>Yoga</option>
+                    <option>Health Camps</option>
+                    <option>All</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+
+
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-lg">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="declare" required>
+                    <label class="custom-control-label" for="declare">I am willing to volunteer for Manavata Services as and when required. I am willing to receive correspondence from Manavata Volunteers and work together for Manavata programs without any expections.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <br>
+            <br>
+
+
+
+
+            <div class="form-group">
+              <div class="row text-center">
+                <div class="col-lg-12">
+                  <input type="submit" class="form-control" value="Submit">
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+      <script>
+
+  </body>
+</html>
